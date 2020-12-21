@@ -11,8 +11,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+            <name>jonolehagemo</name>
+            <url>https://maven.pkg.github.com/jonolehagemo/kostra-kontrollprogram</url>
         </repository>
     </distributionManagement>
          
@@ -37,7 +37,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub OWNER Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/OWNER </url>
+                    <url>https://maven.pkg.github.com/jonolehagemo</url>
                 </repository>
             </repositories>
         </profile>
