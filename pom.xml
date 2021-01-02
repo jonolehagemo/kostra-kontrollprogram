@@ -7,16 +7,21 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>13</maven.compiler.release>
+        <git.repository>jonolehagemo/kostra-kontrollprogram</git.repository>
     </properties>
+    <scm>
+        <id>github</id>
+        <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
+    </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>jonolehagemo</name>
-            <url>https://maven.pkg.github.com/jonolehagemo/kostra-kontrollprogram</url>
+            <url>https://maven.pkg.github.com/${git.repository}</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
-         
          
     <repositories>
         <repository>
@@ -99,6 +104,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0-M1</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
             </plugin>
         </plugins>
     </build>
