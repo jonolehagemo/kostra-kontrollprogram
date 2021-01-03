@@ -37,7 +37,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Publish JAR
-      run: ./mvnw -B release:prepare release:perform
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn deploy
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
