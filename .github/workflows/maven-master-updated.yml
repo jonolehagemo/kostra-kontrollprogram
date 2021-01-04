@@ -38,7 +38,7 @@ jobs:
       uses: whelk-io/maven-settings-xml-action@v14
       with:
         repositories: '[{ "id": "github", "url": "https://github.com/${{github.repository}}/" }]'
-        plugin_repositories: '[{ "id": "${{ github.repository }}", "url": "https://github.com/${{github.repository}}/" }]'
+        plugin_repositories: '[{ "id": "github", "url": "https://github.com/${{github.repository}}/" }]'
         servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.GITHUB_TOKEN }}" }]'
 
     - name: Show settings.xml
