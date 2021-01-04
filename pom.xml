@@ -12,7 +12,6 @@
         <git.repository>jonolehagemo/kostra-kontrollprogram</git.repository>
     </properties>
     <scm>
-        <id>github</id>
         <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
     </scm>
     <distributionManagement>
