@@ -28,7 +28,13 @@ jobs:
       with:
         java-version: 13.0.2
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-
+        server-username: "${{ github.actor }}"
+        server-password: "${{ secrets.GITHUB_TOKEN }}"
+        repository-id: "github"
+        repository-url: "https://github.com/${{github.repository}}/"
+        plugin_repository-id: "github"
+        plugin_repository-url: "https://github.com/${{github.repository}}/"
+        
     - name: Show settings.xml made by setup JDK
       run: cat ~/.m2/settings.xml
 
