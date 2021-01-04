@@ -60,3 +60,6 @@ jobs:
       run: mvn -B release:prepare release:perform
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GITHUB_TOKEN is the default env for the password
+        
+    - name: list target directory
+      run: ls -laR ~/
