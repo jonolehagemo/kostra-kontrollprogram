@@ -63,3 +63,13 @@ jobs:
         
     - name: list target directory
       run: ls -laR ~/
+
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: target/kontrollprogram-assembly.jar
+        asset_name: kostra-kontrollprogram.jar
+        tag: ${{ github.ref }}
+        overwrite: true
+        body: "This is my release text. Tag is ${{ github.ref }}"
