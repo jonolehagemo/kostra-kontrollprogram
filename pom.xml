@@ -7,7 +7,6 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>14</maven.compiler.release>
         <java.version>13</java.version>
         <git.repository>jonolehagemo/kostra-kontrollprogram</git.repository>
     </properties>
