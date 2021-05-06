@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.ssb.kostra.kontrollprogram</groupId>
     <artifactId>kontrollprogram</artifactId>
-    <version>2021.01.5-SNAPSHOT</version>
+    <version>2021.01.5</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -11,7 +11,7 @@
     </properties>
     <scm>
         <developerConnection>scm:git:https://github.com/${git.repository}.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>v2021.01.5</tag>
   </scm>
     <distributionManagement>
         <repository>
